@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>try</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Mikey" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="team5_TryPage.css" />
+		<script type="text/javascript" src="team5_TryPage.js"></script>
+		<link rel="stylesheet" type="text/css" href="help.css" />
+        <script type="text/javascript" src="help.js"></script>
+	</head>
+	<body>
+		<audio id="numSound" controls="controls" hidden="true"></audio>
+		<div id ="wholepage">
+			<div id="menu">
+				<a href="team5_BaselineObserveTryTestPage.html"><img id="home" src="images/Home Page Icons/Dark Red/Home_Dark_Red.png" alt="Home Button"  title="Home"/></a>
+				<div id="blanket" style="display:none;"></div>
+				<div id="popUpDiv" style="display:none;">
+					<a id="closeX" href="#" onclick="popup('popUpDiv')">X</a>
+					<p id="popUpText">
+						Welcome to Try Counting Numbers
+						<br />
+						<br />
+						Instructions:<br />
+						<br />
+						Learn the Myaamia Counting Numbers by clicking numbers and hitting play (the music note button)!
+						To create a two digit number, click the number for the ten's place then the number for the one's
+						place. The digits fill in left to right. <br />
+						<br />
+						To clear the number, click the clear button at the bottom right of the application.<br />
+						<br />
+						Click the red Home Button at the top to return to the counting numbers home page!
+					</p>
+				</div>
+				<a href="#" onclick="popup('popUpDiv')"><img id="help" src="images/Home Page Icons/Dark Red/Quiz_Dark_Red.png" alt="Help Button"  title="Help"/></a>
+			</div>
+			<div id ="numbers1">
+				<img class="number" id="num0" src="images/0.png" onclick="copyImage(0)" onmousemove="numSelected(0)" onmouseout="numDeselected(0)"  />
+				<img class="number" id="num1" src="images/1.png" onclick="copyImage(1)" onmousemove="numSelected(1)" onmouseout="numDeselected(1)"/>
+				<img class="number" id="num2" src="images/2.png" onclick="copyImage(2)" onmousemove="numSelected(2)" onmouseout="numDeselected(2)" />
+				<img class="number" id="num3" src="images/3.png" onclick="copyImage(3)" onmousemove="numSelected(3)" onmouseout="numDeselected(3)" />
+				<img class="number" id="num4" src="images/4.png" onclick="copyImage(4)" onmousemove="numSelected(4)" onmouseout="numDeselected(4)" />
+			</div>
+			<div id ="numbers2">
+				<img class="number" id="num5" src="images/5.png"  onclick="copyImage(5)" onmousemove="numSelected(5)" onmouseout="numDeselected(5)" />
+				<img class="number" id="num6" src="images/6.png"  onclick="copyImage(6)" onmousemove="numSelected(6)" onmouseout="numDeselected(6)" />
+				<img class="number" id="num7" src="images/7.png"  onclick="copyImage(7)" onmousemove="numSelected(7)" onmouseout="numDeselected(7)" />
+				<img class="number" id="num8" src="images/8.png"  onclick="copyImage(8)" onmousemove="numSelected(8)" onmouseout="numDeselected(8)" />
+				<img class="number" id="num9" src="images/9.png"  onclick="copyImage(9)" onmousemove="numSelected(9)" onmouseout="numDeselected(9)" />
+			</div>
+			<div id ="actions">
+				<img id="refresh" src="images/refresh transparent.png" onclick="copyImage(-1)" />
+				<img id="first" src="images/0.png" data-current="0"; />
+				<img id="second" src="images/0.png" data-current="0" />
+				<img id="play" src="images/play_sound.png" onclick="playsound()"/>
+			</div>
+		</div>
+	</body>
+</html>

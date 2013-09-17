@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+        Remove this if you use the .htaccess -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Test</title>
+        <meta name="description" content="" />
+        <meta name="author" content="Daniel J Bray" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="stylesheet" type="text/css" href="team5_TestPage.css" />
+        <script type="text/javascript" src="team5_TestPage.js"></script>
+        <link rel="stylesheet" type="text/css" href="help.css" />
+        <script type="text/javascript" src="help.js"></script>
+    </head>
+    <body>
+        <div id="blanket" style="display:none;"></div>
+        <div id="popUpDiv" style="display:none;">
+            <a id="closeX" href="#" onclick="popup('popUpDiv')">X</a>
+            <p id="popUpText">
+                Welcome to Test Counting Numbers! <br />
+                <br />
+                Objective: <br />
+                <br />
+                Listen to the sound and click the answer you think is the same number!<br />
+                <br />
+                How to play: <br />
+                <br />
+                Click on the play button (the button with a music note) to hear a number spoken in Myaamia.
+                Make sure your speakers are on so you can hear it! Once you hear the sound, look at your choices
+                for an answer and pick the one you think is right.<br /> 
+                <br />
+                If the answer is right you will hear "good job" in Myaamia and see a green check mark! Otherwise
+                the computer will say "try again" in Myaamia and display a red X.<br />
+                <br />
+                Click the red Home Button at the top to return to the counting numbers home page!
+                <br />
+            </p>
+        </div>
+        <div class="whole_page">
+            <div class="soundButton">
+                <img id="soundImage" src="images/play_sound.png" alt="play-sound-button" onclick="playSound()" />
+                <audio id="audio_sound" controls=false hidden=true></audio>
+                <audio id="answer_sound" controls=false hidden=true></audio>
+                <span id="Home"> 
+                    <a href="team5_BaselineObserveTryTestPage.html"><img src="images/Home Page Icons/Dark Red/Home_Dark_Red.png" id="homeIcon" alt="Home Button"  title="Home"/></a> 
+                    <a href="#" onclick="popup('popUpDiv')"><img src="images/Home Page Icons/Dark Red/Quiz_Dark_Red.png" id="helpIcon" alt="Help Button"  title="Help"/></a>
+                </span>
+            </div>
+            <div class="answers">
+                <table style="vertical-align: center;">
+                    <tr>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_0" alt="Image-of-Guess" onclick="assertGuess(0)" onmousemove="imageSelected(0)" onmouseout="imageDeselected(0)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_1" alt="Image-of-Guess" onclick="assertGuess(1)" onmousemove="imageSelected(1)" onmouseout="imageDeselected(1)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_2" alt="Image-of-Guess" onclick="assertGuess(2)" onmousemove="imageSelected(2)" onmouseout="imageDeselected(2)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_3" alt="Image-of-Guess" onclick="assertGuess(3)" onmousemove="imageSelected(3)" onmouseout="imageDeselected(3)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_4" alt="Image-of-Guess" onclick="assertGuess(4)" onmousemove="imageSelected(4)" onmouseout="imageDeselected(4)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_5" alt="Image-of-Guess" onclick="assertGuess(5)" onmousemove="imageSelected(5)" onmouseout="imageDeselected(5)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_6" alt="Image-of-Guess" onclick="assertGuess(6)" onmousemove="imageSelected(6)" onmouseout="imageDeselected(6)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_7" alt="Image-of-Guess" onclick="assertGuess(7)" onmousemove="imageSelected(7)" onmouseout="imageDeselected(7)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_8" alt="Image-of-Guess" onclick="assertGuess(8)" onmousemove="imageSelected(8)" onmouseout="imageDeselected(8)" /></span></td>
+                        <td><span class="answerContainer"><img class="answerImage" id="ans_9" alt="Image-of-Guess" onclick="assertGuess(9)" onmousemove="imageSelected(9)" onmouseout="imageDeselected(9)" /></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="rightOrWrong">
+                <img src="images/right.png" id="correct" style="display:none;" />
+                <img src="images/wrong.png" id="wrong" style="display:none;" />
+            </div>
+        </div>
+    </body>
+</html>

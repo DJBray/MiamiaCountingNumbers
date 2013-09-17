@@ -1,0 +1,55 @@
+.whole_page{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+
+div.numberContainer{
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.top{
+	vertical-align: top;
+	width:100%;
+	height:22%;
+	padding:0px;
+	margin:0px;
+}
+
+.middle{
+	height: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+.bottom{
+	vertical-align: bottom;
+	width:100%;
+	height:22%;
+	padding:0px;
+	margin:0px;
+}
+
+img.numbers{
+	border: 2px solid white;
+	padding:0px;
+}
+
+img.numbers:hover{
+	border: 2px solid blue;
+	cursor: pointer;
+}
+
+#Home{
+	vertical-align: top;
+	float: right;
+}
+
+#numberPanel{
+	width:30%;
+	height:56%;
+	border: 1% solid black;
+	margin-left: 22%;
+}

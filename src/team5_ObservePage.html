@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Observe</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Daniel J Bray" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="team5_ObservePage.css" />
+		<script type="text/javascript" src="team5_ObservePage.js"></script>
+		<link rel="stylesheet" type="text/css" href="help.css" />
+        <script type="text/javascript" src="help.js"></script>
+	</head>
+	<body>
+	    <div id="blanket" style="display:none;"></div>
+        <div id="popUpDiv" style="display:none;">
+            <a id="closeX" href="#" onclick="popup('popUpDiv')">X</a>
+            <p id="popUpText">
+                Welcome to Observe Counting Numbers! <br />
+                <br />
+                Instructions:<br />
+                <br />
+                Click on a picture with a range of numbers to hear those numbers in Myaamia. Each number will be played and show the number
+                that goes with it. You can practice on your own in the Try and Test pages!<br />
+                <br />
+                Click the red Home Button at the top to return to the counting numbers home page!
+                <br />
+            </p>
+        </div>
+		<div class="whole_page">
+			<div class="top">
+				<div class="numberContainer">
+					<img class="numbers" id="firstTen" src="images/0-9.png" onclick="count(0)" />
+					<img class="numbers" id="secondTen" src="images/10-19.png" onclick="count(1)" />
+					<img class="numbers" id="thirdTen" src="images/20-29.png" onclick="count(2)" />
+					<img class="numbers" id="fourthTen" src="images/30-39.png" onclick="count(3)" />
+					<img class="numbers" id="fifthTen" src="images/40-49.png" onclick="count(4)" />
+					<span id="Home"> 
+					    <a href="team5_BaselineObserveTryTestPage.html"><img src="images/Home Page Icons/Dark Red/Home_Dark_Red.png" id="homeIcon" alt="Home Button"  title="Home"/></a> 
+					    <a href="#" onclick="popup('popUpDiv')"><img src="images/Home Page Icons/Dark Red/Quiz_Dark_Red.png" id="helpIcon" alt="Help Button"  title="Help"/></a>
+					</span>
+				</div>
+			</div>
+			<div class="middle">
+				<img class="panel" id="numberPanel" />
+				<audio id="audioPlayer" controls="controls" hidden="true"></audio>
+			</div>
+			<div class="bottom">
+				<div class="numberContainer">
+					<img class="numbers" id="sixthTen" src="images/50-59.png" onclick="count(5)" />
+					<img class="numbers" id="seventhTen" src="images/60-69.png" onclick="count(6)" />
+					<img class="numbers" id="eighthTen" src="images/70-79.png" onclick="count(7)" />
+					<img class="numbers" id="ninthTen" src="images/80-89.png" onclick="count(8)" />
+					<img class="numbers" id="tenthTen" src="images/90-99.png" onclick="count(9)" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
